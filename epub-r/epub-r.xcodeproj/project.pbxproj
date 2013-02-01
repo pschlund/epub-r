@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F40E79F16AC963D003B87F6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F40E79E16AC963D003B87F6 /* Cocoa.framework */; };
+		5F40E7AA16AC963D003B87F6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F40E7A816AC963D003B87F6 /* InfoPlist.strings */; };
+		5F40E7AC16AC963D003B87F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F40E7AB16AC963D003B87F6 /* main.m */; };
+		5F40E7B116AC963D003B87F6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F40E7AF16AC963D003B87F6 /* MainMenu.xib */; };
+		5F40E7B416AC963D003B87F6 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5F40E7B316AC963D003B87F6 /* rb_main.rb */; };
+		5F40E7B616AC963D003B87F6 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5F40E7B516AC963D003B87F6 /* AppDelegate.rb */; };
+		5F40E7C016AC96FD003B87F6 /* epub.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5F40E7BF16AC96FC003B87F6 /* epub.rb */; };
+		5F40E7C216AC97A3003B87F6 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F40E7C116AC97A3003B87F6 /* MacRuby.framework */; };
+		5F40E7C416AC97BD003B87F6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F40E7C316AC97BD003B87F6 /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F40E7A316AC963D003B87F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F40E79116AC963D003B87F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F40E79916AC963D003B87F6;
+			remoteInfo = "epub-r";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F40E79A16AC963D003B87F6 /* epub-r.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "epub-r.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F40E79E16AC963D003B87F6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5F40E7A716AC963D003B87F6 /* epub-r-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "epub-r-Info.plist"; sourceTree = "<group>"; };
+		5F40E7A916AC963D003B87F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F40E7AB16AC963D003B87F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F40E7AD16AC963D003B87F6 /* epub-r-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "epub-r-Prefix.pch"; sourceTree = "<group>"; };
+		5F40E7B016AC963D003B87F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5F40E7B316AC963D003B87F6 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		5F40E7B516AC963D003B87F6 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		5F40E7BF16AC96FC003B87F6 /* epub.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = epub.rb; sourceTree = "<group>"; };
+		5F40E7C116AC97A3003B87F6 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = /Library/Frameworks/MacRuby.framework; sourceTree = "<absolute>"; };
+		5F40E7C316AC97BD003B87F6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F40E79716AC963D003B87F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F40E7C216AC97A3003B87F6 /* MacRuby.framework in Frameworks */,
+				5F40E7C416AC97BD003B87F6 /* WebKit.framework in Frameworks */,
+				5F40E79F16AC963D003B87F6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F40E78F16AC963D003B87F6 = {
+			isa = PBXGroup;
+			children = (
+				5F40E7A516AC963D003B87F6 /* epub-r */,
+				5F40E79D16AC963D003B87F6 /* Frameworks */,
+				5F40E79B16AC963D003B87F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F40E79B16AC963D003B87F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F40E79A16AC963D003B87F6 /* epub-r.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F40E79D16AC963D003B87F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F40E7C316AC97BD003B87F6 /* WebKit.framework */,
+				5F40E7C116AC97A3003B87F6 /* MacRuby.framework */,
+				5F40E79E16AC963D003B87F6 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F40E7A516AC963D003B87F6 /* epub-r */ = {
+			isa = PBXGroup;
+			children = (
+				5F40E7B516AC963D003B87F6 /* AppDelegate.rb */,
+				5F40E7AE16AC963D003B87F6 /* Resources */,
+				5F40E7B216AC963D003B87F6 /* Other Sources */,
+				5F40E7A616AC963D003B87F6 /* Supporting Files */,
+				5F40E7BF16AC96FC003B87F6 /* epub.rb */,
+			);
+			path = "epub-r";
+			sourceTree = "<group>";
+		};
+		5F40E7A616AC963D003B87F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F40E7A716AC963D003B87F6 /* epub-r-Info.plist */,
+				5F40E7A816AC963D003B87F6 /* InfoPlist.strings */,
+				5F40E7AB16AC963D003B87F6 /* main.m */,
+				5F40E7AD16AC963D003B87F6 /* epub-r-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F40E7AE16AC963D003B87F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F40E7AF16AC963D003B87F6 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5F40E7B216AC963D003B87F6 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5F40E7B316AC963D003B87F6 /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		5F40E7A216AC963D003B87F6 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed  --gem rubyzip ";
+			buildConfigurationList = 5F40E7BC16AC963D003B87F6 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			buildWorkingDirectory = "";
+			dependencies = (
+				5F40E7A416AC963D003B87F6 /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		5F40E79916AC963D003B87F6 /* epub-r */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F40E7B916AC963D003B87F6 /* Build configuration list for PBXNativeTarget "epub-r" */;
+			buildPhases = (
+				5F40E79616AC963D003B87F6 /* Sources */,
+				5F40E79716AC963D003B87F6 /* Frameworks */,
+				5F40E79816AC963D003B87F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "epub-r";
+			productName = "epub-r";
+			productReference = 5F40E79A16AC963D003B87F6 /* epub-r.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F40E79116AC963D003B87F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Patrik Schlund";
+			};
+			buildConfigurationList = 5F40E79416AC963D003B87F6 /* Build configuration list for PBXProject "epub-r" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5F40E78F16AC963D003B87F6;
+			productRefGroup = 5F40E79B16AC963D003B87F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F40E79916AC963D003B87F6 /* epub-r */,
+				5F40E7A216AC963D003B87F6 /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F40E79816AC963D003B87F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F40E7AA16AC963D003B87F6 /* InfoPlist.strings in Resources */,
+				5F40E7B116AC963D003B87F6 /* MainMenu.xib in Resources */,
+				5F40E7B416AC963D003B87F6 /* rb_main.rb in Resources */,
+				5F40E7B616AC963D003B87F6 /* AppDelegate.rb in Resources */,
+				5F40E7C016AC96FD003B87F6 /* epub.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F40E79616AC963D003B87F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F40E7AC16AC963D003B87F6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F40E7A416AC963D003B87F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F40E79916AC963D003B87F6 /* epub-r */;
+			targetProxy = 5F40E7A316AC963D003B87F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F40E7A816AC963D003B87F6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F40E7A916AC963D003B87F6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5F40E7AF16AC963D003B87F6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F40E7B016AC963D003B87F6 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F40E7B716AC963D003B87F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5F40E7B816AC963D003B87F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5F40E7BA16AC963D003B87F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					/Library/Frameworks,
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "epub-r/epub-r-Prefix.pch";
+				INFOPLIST_FILE = "epub-r/epub-r-Info.plist";
+				LIBRARY_SEARCH_PATHS = /Library/Frameworks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5F40E7BB16AC963D003B87F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					/Library/Frameworks,
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "epub-r/epub-r-Prefix.pch";
+				INFOPLIST_FILE = "epub-r/epub-r-Info.plist";
+				LIBRARY_SEARCH_PATHS = /Library/Frameworks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5F40E7BD16AC963D003B87F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Debug;
+		};
+		5F40E7BE16AC963D003B87F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F40E79416AC963D003B87F6 /* Build configuration list for PBXProject "epub-r" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F40E7B716AC963D003B87F6 /* Debug */,
+				5F40E7B816AC963D003B87F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F40E7B916AC963D003B87F6 /* Build configuration list for PBXNativeTarget "epub-r" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F40E7BA16AC963D003B87F6 /* Debug */,
+				5F40E7BB16AC963D003B87F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F40E7BC16AC963D003B87F6 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F40E7BD16AC963D003B87F6 /* Debug */,
+				5F40E7BE16AC963D003B87F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F40E79116AC963D003B87F6 /* Project object */;
+}

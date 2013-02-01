@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'epub-r' target in the 'epub-r' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
