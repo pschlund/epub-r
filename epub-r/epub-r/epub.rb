@@ -74,7 +74,6 @@ class Epub
     def get_next_page(id)
         i = spine.index(id) + 1
         spine.size == i ? nil : spine[i]
-        
     end
     
     def cover_image

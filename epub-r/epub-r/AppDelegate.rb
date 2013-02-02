@@ -19,6 +19,9 @@ class AppDelegate
         # TODO: Switch this to bundle path
         @tmp_dir =  File.join(NSTemporaryDirectory(), 'iRead/')
         puts "The temp dir is: #{@tmp_dir}"
+        
+        # Clear default items from toc
+        @btn_toc.removeAllItems
     end
     
     # WebView delegates
@@ -53,9 +56,7 @@ class AppDelegate
             destination_path.stringValue = path
             @book.cleanup if @book
             @book = Epub.new(path, @tmp_dir)
-            #open_title self
-            #open_toc self
-            @current_page = @book.toc_list[0][:src]
+            @current_page = @book.toc_list[0][:src].split('#')[0]
             url = "file://#{File.join(@tmp_dir, @current_page)}"
             load_web_view url
             @btn_toc.removeAllItems
@@ -76,7 +77,7 @@ class AppDelegate
     
     def toc_selection_changed(sender)
         selected_item = @btn_toc.titleOfSelectedItem
-        @current_page = @book.toc_list.find{|f| f[:title] == selected_item}[:src]
+        @current_page = @book.toc_list.find{|f| f[:title] == selected_item}[:src].split('#')[0]
         url = "file://#{File.join(@tmp_dir, @current_page)}"
         load_web_view url
     end
