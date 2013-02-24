@@ -16,6 +16,7 @@
 		5F40E7C016AC96FD003B87F6 /* epub.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5F40E7BF16AC96FC003B87F6 /* epub.rb */; };
 		5F40E7C216AC97A3003B87F6 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F40E7C116AC97A3003B87F6 /* MacRuby.framework */; };
 		5F40E7C416AC97BD003B87F6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F40E7C316AC97BD003B87F6 /* WebKit.framework */; };
+		5F484AE816C48FC7001CA9DF /* epub_viewer.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5F484AE716C48FC7001CA9DF /* epub_viewer.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		5F40E7BF16AC96FC003B87F6 /* epub.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = epub.rb; sourceTree = "<group>"; };
 		5F40E7C116AC97A3003B87F6 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = /Library/Frameworks/MacRuby.framework; sourceTree = "<absolute>"; };
 		5F40E7C316AC97BD003B87F6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		5F484AE716C48FC7001CA9DF /* epub_viewer.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = epub_viewer.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				5F40E7B216AC963D003B87F6 /* Other Sources */,
 				5F40E7A616AC963D003B87F6 /* Supporting Files */,
 				5F40E7BF16AC96FC003B87F6 /* epub.rb */,
+				5F484AE716C48FC7001CA9DF /* epub_viewer.rb */,
 			);
 			path = "epub-r";
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				5F40E7B416AC963D003B87F6 /* rb_main.rb in Resources */,
 				5F40E7B616AC963D003B87F6 /* AppDelegate.rb in Resources */,
 				5F40E7C016AC96FD003B87F6 /* epub.rb in Resources */,
+				5F484AE816C48FC7001CA9DF /* epub_viewer.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

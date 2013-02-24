@@ -22,6 +22,11 @@ class AppDelegate
         
         # Clear default items from toc
         @btn_toc.removeAllItems
+        
+        
+        # Wire up viewer
+        #@viewer = EpubViewer.new(@webView)
+        
     end
     
     # WebView delegates
@@ -64,6 +69,7 @@ class AppDelegate
         end
     end
     
+    
     private
     def load_web_view(url)
         req = NSURLRequest.requestWithURL(NSURL.URLWithString(url))
@@ -81,6 +87,16 @@ class AppDelegate
         url = "file://#{File.join(@tmp_dir, @current_page)}"
         load_web_view url
     end
+    
+    def text_larger(sender)
+        # TODO: Figure out why this is not working
+        webView.makeTextLarger sender
+    end
+    
+    def text_smaller(sender)
+        webView.makeTextSmaller sender
+    end
+    
     
     def open_title(sender)
         @current_page = @book.cover_path
