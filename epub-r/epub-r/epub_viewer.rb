@@ -5,22 +5,36 @@
 #  Created by Patrik Schlund on 2/7/13.
 #  Copyright 2013 Patrik Schlund. All rights reserved.
 #
+
+require 'forwardable'
+
 class EpubViewer
-    attr_accessor :web_view, :book, :tmp_dir, :current_page
+    extend Forwardable
+    attr_accessor :web_view, :delegate, :book, :tmp_dir, :current_page
+    def_delegators :@delegate, :page_loading, :page_loaded
     
-    # TODO: Figure our if we need to set this
+    # TODO: Figure our if we really need to set this
     CUSTOM_USER_AGENT = 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_2; en-us) AppleWebKit/531.21.8 (KHTML, like Gecko) Version/4.0.4 Safari/531.21.10'
     
     def initialize(web_view)
         @web_view = web_view
-        web_view.delegate self
+        # web_view.UIDelegate = self
+        web_view.ResourceLoadDelegate = self
         web_view.setCustomUserAgent  CUSTOM_USER_AGENT
-        
-        # TODO: Create tmp dir
     end
     
     def open(book)
+        close
         @book = book
+        
+        # Open first page in toc
+        load_by_page @book.toc_list[0][:src].split('#')[0]        
+    end
+    
+    def close
+        if @book
+            @book.cleanup
+        end
     end
     
     def next_page
@@ -51,21 +65,26 @@ class EpubViewer
         path =  request.URL.relativePath
         
         # Skip extraction if the file is located on the web
-        return if p.include?('http')
+        return if path.include?('http')
         
         # Strip the temporary directory from path
-        file = p.gsub(@tmp_dir, '')
+        file = path.gsub(@tmp_dir, '')
         
         @book.extract file
     end
     
-    protected
-    
-    def load_by_id(id)
-        @current_page = @book.id_to_url[id]
+    def load_by_page(page)
+        @current_page = page
         url = "file://#{File.join(@tmp_dir, @current_page)}"
         load url
     end
+
+    protected
+    
+    def load_by_id(id)
+        load_by_page @book.id_to_url[id]
+    end
+    
     
     def load(url)
         req = NSURLRequest.requestWithURL(NSURL.URLWithString(url))

@@ -12,10 +12,11 @@ require 'fileutils'
 require 'zip/zip'
 
 class Epub
+    attr_accessor :tmp_dir
     
-    def initialize(filename, tmp_path)
+    def initialize(filename, tmp_dir)
         @filename = filename
-        @tmp_path = tmp_path
+        @tmp_dir = tmp_dir
     end
     
     def title
@@ -88,7 +89,7 @@ class Epub
     end
     
     def extract(file)
-        path = File.join(@tmp_path, file)
+        path = File.join(@tmp_dir, file)
         puts "The file is #{file} and the path is #{path}"
         FileUtils.mkdir_p(File.dirname(path))
         file = lookup_file_path file
@@ -97,7 +98,7 @@ class Epub
     end
     
     def cleanup
-        FileUtils.rm_rf("#{@tmp_path}/.", secure: true)
+        FileUtils.rm_rf("#{@tmp_dir}/.", secure: true)
     end
     
     def toc_list
